@@ -1,0 +1,14 @@
+{
+  "name": "usdc-yield-optimiser",
+  "version": "1.0.0",
+  "description": "CLI bot that compares Aave and Compound USDC yields and suggests optimal venue",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "sumitabh1710",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}
