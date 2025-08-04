@@ -37,7 +37,10 @@ async function fetchYields() {
 
     const result = {};
     filtered.forEach((pool) => {
-      result[pool.project.toLowerCase()] = pool.apy;
+      const key = pool.project.toLowerCase();
+      if (!result[key] || pool.apy > result[key]) {
+        result[key] = pool.apy;
+      }
     });
 
     return result;
