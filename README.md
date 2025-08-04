@@ -25,3 +25,7 @@ This CLI bot monitors USDC lending yields across Aave and Compound and recommend
    git clone https://github.com/sumitabh1710/usdc-yield-optimiser.git
    cd usdc-yield-optimiser
    npm install
+2. run project:
+  ```bash
+  npm start
+  
