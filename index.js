@@ -1,7 +1,7 @@
 const axios = require("axios");
 
-const AAVE = "aave";
-const COMPOUND = "compound";
+const AAVE = "aave-v3";
+const COMPOUND = "compound-v3";
 let currentPreferred = null;
 const THRESHOLD_DIFF = 0.1; // minimum % difference to consider switching
 
