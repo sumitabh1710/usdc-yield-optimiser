@@ -32,6 +32,7 @@ async function fetchYields() {
       (pool) =>
         pool.symbol === "USDC" &&
         [AAVE, COMPOUND].includes(pool.project.toLowerCase()) &&
+        pool.chain === "Ethereum" &&
         typeof pool.apy === "number"
     );
 
@@ -42,6 +43,15 @@ async function fetchYields() {
         result[key] = pool.apy;
       }
     });
+
+    // console.log(
+    //   data.filter(
+    //     (each) =>
+    //       each.symbol === "USDC" &&
+    //       (each.project === "aave-v3" || each.project === "compound-v3") &&
+    //       each.chain === "Ethereum"
+    //   )
+    // );
 
     return result;
   } catch (e) {
